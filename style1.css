@@ -1,5 +1,6 @@
 body {
     color: #40514e;
+    background: #D2E0FB;
     margin: 0;
     text-align: center;
     font-family: "Merriweather", serif;
@@ -43,6 +44,111 @@ body {
       color:skyblue;
       
   }
+  .profile-pic{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid skyblue;
+    
+  }
+  .second-container{
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+   
+  }
+  .profile-text{
+    font-family: 'Pacifico', cursive;
+    width: 40%;
+    margin: auto;
+    color: #1e1d15;
+  }
+  hr{
+    border: dotted #8cf0f0 6px;
+    border-bottom: none;
+    margin:  auto;
+    width: 2%;
+  }
+  .third-container{
+       padding-top: 100px;
+       padding-bottom: 100px;
+       width: 100%;
+  }
+  .skill-box{
+    /* border: 1px dashed #516a6a; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    border-radius: 5px;
+   
+  }
+ .skill-list{
+  list-style: none;
+  font-family: 'Playpen Sans', cursive;
+  font-size: 1.4rem;
+  
+ }
+  .skill{
+   
+    border-radius: 5%;
+    background-color:  transparent;
+    color: #1e1d15;
+ 
+    
+  }
+ 
+  .skill-img{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+  }
+  .skill-img > img{
+    height: 30px;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 25%;
+    background: rgba(172, 170, 170, 0.1);
+  }
+  .skill-img > h2{
+    font-size: 2.2rem;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  .final-text{
+    font-family: 'Pacifico', cursive;
+    color: #1e1d15;
+  }
+ .last-text{
+  padding: 50px 0;
+  margin: auto;
+  width: 30%;
+ }
+ .btn{
+  margin-top: 100px;
+  padding: 10px;
+  background: skyblue;
+  border-radius: 5%;
+  font-size: 1.2rem;
+  border: #065c78;
+  color: white;
+  text-decoration: none;
+ }
+ .footer-items{
+  padding: 50px 0;
+  background-color: #065c78;
+  margin-top: 100px;
+  color: #8cf0f0;
+
+ }
+.footer-items > a{
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+
   @media(max-width:600px) 
   {
     body{
@@ -75,6 +181,35 @@ body {
               left: 230px;
               bottom: 200px;
           }
+    .second-container{
+      max-width: 100%;
+    }
+    .profile-text{
+      width: 70%;
+    }
+    .third-container{
+      width: 100%;
+    }
+   .skill-box{
+    flex-direction: column;
+    gap: 40px;
+    max-width: 100%;
+    justify-content: center;
+    
+   
+   }
+   hr{
+    width: 2%;
+   }
+   .skill-list{
+    max-width: 100%;
+   }
+   .skill{
+    max-width: 100%;
+   }
+   .last-text{
+    width: 100%;
+   }
   }
   /* @media (max-width:450px) and (min-width:300px)
   {
@@ -85,3 +220,21 @@ body {
               bottom: 250px;
     }
   } */
+
+  .gradient-background {
+    background: linear-gradient(300deg, #00bfff,#f3e7b1,rgb(217, 233, 240));
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
