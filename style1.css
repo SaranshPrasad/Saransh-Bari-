@@ -207,9 +207,18 @@ body {
    .skill{
     max-width: 100%;
    }
-   .last-text{
+   .last-container{
     width: 100%;
    }
+   .last-text{
+    width: 80%;
+   }
+   .final-text{
+    width: 80%;
+    margin: 50px;
+   }
+  
+
   }
   /* @media (max-width:450px) and (min-width:300px)
   {
