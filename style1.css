@@ -15,6 +15,7 @@ body {
     font-size: 5.625rem;
     margin: 50px auto 0 auto;
     font-family: "Sacramento", cursive;
+   
   }
           h2 {
     color: #66bfbf;
@@ -149,6 +150,7 @@ body {
   color: white;
 }
 
+
   @media(max-width:600px) 
   {
     body{
@@ -217,8 +219,17 @@ body {
     width: 80%;
     margin: 50px;
    }
-  
-
+   #nav-bar{
+  width: 100%;
+   }
+   #nav-bar ul{
+ width: 100%;
+   }
+   #nav-bar ul li a{
+    margin: 0;
+    padding: 0;
+   }
+ 
   }
   /* @media (max-width:450px) and (min-width:300px)
   {
@@ -246,4 +257,56 @@ body {
     100% {
       background-position: 0% 50%;
     }
+  }
+
+
+  #skills{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px;
+  }
+  #box-1 , #box-2 , #box-3{
+    background-color:rgb(172, 221, 240);
+    height: 300px;
+    width: 400px;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 10px #065c78;
+  }
+  #box-1 li, #box-2 li, #box-3 li{
+    list-style: none;
+  }
+
+  #nav-bar{
+    background:rgb(7, 131, 179);
+    color: #00bfff;
+  }
+  #nav-bar ul{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+   padding: 0;
+    justify-content: space-around;
+  }
+  #nav-bar ul li{
+    list-style: none;
+  }
+  #nav-bar ul li a{
+    text-decoration: none;
+    color: #c0efff;
+    display: block;
+    cursor: pointer;
+    padding: 9px 9px;
+  }
+  li a:hover{
+  opacity: 0.8;
+  background: #000;
+  }
+  .skills-title{
+    color: #065c78;
+    text-decoration: underline;
+    margin-top: 3rem;
+    font-family: 'Poppins';
   }
