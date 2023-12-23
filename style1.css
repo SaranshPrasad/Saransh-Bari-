@@ -70,54 +70,8 @@ body {
     margin:  auto;
     width: 2%;
   }
-  .third-container{
-       padding-top: 100px;
-       padding-bottom: 100px;
-       width: 100%;
-  }
-  .skill-box{
-    /* border: 1px dashed #516a6a; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px;
-    border-radius: 5px;
-   
-  }
- .skill-list{
-  list-style: none;
-  font-family: 'Playpen Sans', cursive;
-  font-size: 1.4rem;
-  
- }
-  .skill{
-   
-    border-radius: 5%;
-    background-color:  transparent;
-    color: #1e1d15;
  
-    
-  }
- 
-  .skill-img{
-    display: flex;
-    gap: 10px;
-    padding: 10px;
-    align-items: center;
-  }
-  .skill-img > img{
-    height: 30px;
-    border: 1px solid white;
-    padding: 15px;
-    border-radius: 25%;
-    background: rgba(172, 170, 170, 0.1);
-  }
-  .skill-img > h2{
-    font-size: 2.2rem;
-    padding: 5px;
-    font-family: 'Poppins', sans-serif;
-    
-  }
+
   .final-text{
     font-family: 'Pacifico', cursive;
     color: #1e1d15;
@@ -189,26 +143,11 @@ body {
     .profile-text{
       width: 70%;
     }
-    .third-container{
-      width: 100%;
-    }
-   .skill-box{
-    flex-direction: column;
-    gap: 40px;
-    max-width: 100%;
-    justify-content: center;
-    
-   
-   }
+
    hr{
     width: 2%;
    }
-   .skill-list{
-    max-width: 100%;
-   }
-   .skill{
-    max-width: 100%;
-   }
+
    .last-container{
     width: 100%;
    }
@@ -231,15 +170,7 @@ body {
    }
  
   }
-  /* @media (max-width:450px) and (min-width:300px)
-  {
-    .cloud-2{
-      width: 100px;
-              position: absolute;
-              left: 30px;
-              bottom: 250px;
-    }
-  } */
+
 
   .gradient-background {
     background: linear-gradient(300deg, #00bfff,#f3e7b1,rgb(217, 233, 240));
@@ -258,27 +189,103 @@ body {
       background-position: 0% 50%;
     }
   }
+#main-skill{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.development{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  background: url(./bg2.jpg) no-repeat ;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  color: #d4f4ff;
+  flex: 1;
+  font-family: 'Poppins';
+  box-shadow: 5px 8px 7px#4a8b92;
+}
 
-
-  #skills{
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 50px;
-  }
-  #box-1 , #box-2 , #box-3{
-    background-color:rgb(172, 221, 240);
-    height: 300px;
-    width: 400px;
-    border-radius: 2rem;
-    box-shadow: 10px 10px 10px #065c78;
-  }
-  #box-1 li, #box-2 li, #box-3 li{
-    list-style: none;
-  }
-
+.skill{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;padding: 0;
+  color: #bde0e0;
+  font-family: 'Poppins';
+}
+#html, #CSS , #JS , #react{
+  width: max-content;
+  padding: 8px;
+  border-radius: 7px;
+  border: 1px solid black;
+  background: rgba(0,0,0,0.4);
+}
+ #html{
+  border: 1px solid rgb(11, 255, 11);
+ }
+ #JS{
+  border: 1px solid goldenrod;
+ }
+ #react{
+  border: 1px solid salmon;
+ }
+#node, #express, #ejs{
+  width: max-content;
+  padding: 8px;
+  border-radius: 7px;
+  border: 1px solid black;
+  background: rgba(0,0,0,0.4);
+  font-family: 'Poppins';
+}
+#node {
+  border: 1px solid cyan;
+}
+#ejs{
+  border: 1px solid rgb(157, 65, 243);
+}
+#express{
+  border: 1px solid red;
+}
+#c, #c1, #java , #python{
+  width: max-content;
+  padding: 8px;
+  border-radius: 7px;
+  border: 1px solid black;
+  background: rgba(0,0,0,0.4);
+}
+#java{
+  border: 1px solid salmon;
+}
+#python{
+  border: 1px solid goldenrod;
+}
+#c{
+  border: 1px solid red;
+}
+#mysql, #postgres, #MariaDb, #Orcale{
+  width: max-content;
+  padding: 8px;
+  border-radius: 7px;
+  border: 1px solid black;
+  background: rgba(0,0,0,0.4);
+}
+#mysql{
+  border: 1px solid goldenrod;
+}
+#postgres{
+  border: 1px solid salmon;
+}
+#Orcale{
+  border: 1px solid red;
+}
+.skill-title{
+  font-size: 1.4rem;
+  color: #04463a;
+}
   #nav-bar{
     background:rgb(7, 131, 179);
     color: #00bfff;
@@ -302,11 +309,6 @@ body {
   }
   li a:hover{
   opacity: 0.8;
-  background: #000;
+  background: #01606b;
   }
-  .skills-title{
-    color: #065c78;
-    text-decoration: underline;
-    margin-top: 3rem;
-    font-family: 'Poppins';
-  }
+ 
