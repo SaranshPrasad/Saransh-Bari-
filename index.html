@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;family=Sacramento&amp;display=swap"
       rel="stylesheet"
     />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style1.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
@@ -26,6 +27,9 @@
     />
   </head>
   <body>
+
+
+    <!-- Mountain Page Or hero page starts here -->
     <div class="first-container gradient-background" id="home">
       <img src="./cloud.png" alt="cloud-1" class="cloud-1" />
       <div class="title">
@@ -36,6 +40,33 @@
       <img src="./mountain.png" alt="mountain" class="mountain" />
     </div>
 
+       <!-- Sticky Nav Bar starts here  -->
+       <nav>
+        <div class="nav-content">
+          <div class="toggle-btn">
+            <i class='bx bxs-rocket'></i>
+            
+          </div>
+          <span style="--i:1;">
+            <a href="#"><i class='bx bxs-home'></i></a>
+          </span>
+          <span style="--i:2;">
+            <a href="https://saranshprasad.github.io/RockPaperScissors/" target="_blank"><i class='bx bxs-game' ></i></a>
+          </span> 
+          <span style="--i:3;">
+            <a href="https://saranshprasad.github.io/TikTacToe/" target="_blank"><i class='bx bxs-invader' ></i></a>
+          </span> 
+          <span style="--i:4;">
+            <a href="https://saranshprasad.github.io/Game-1/" target="_blank"><i class='bx bxs-dice-6' ></i></a>
+          </span>
+          <span style="--i:5;">
+            <a href="https://github.com/SaranshPrasad/"  target="_blank"><i class='bx bxl-github' ></i></a>
+          </span>
+        </div>
+      </nav>
+
+
+    <!-- Second Container or About Me section Starts  -->
     <div class="second-container">
       <img src="./picofme.png" alt="" class="profile-pic" />
       <h1 class="profile-heading">Hello</h1>
@@ -49,29 +80,8 @@
     </div>
     <hr />
 
-    <nav id="nav-bar">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <a
-            href="https://saranshprasad.github.io/RockPaperScissors"
-            target="_blank"
-            >Game 1</a
-          >
-        </li>
-        <li>
-          <a href="https://saranshprasad.github.io/Game-1/" target="_blank"
-            >Game 2</a
-          >
-        </li>
-        <li>
-          <a href="https://saranshprasad.github.io/TikTacToe/" target="_blank"
-            >Game 3</a
-          >
-        </li>
-      </ul>
-    </nav>
+  
+  <!-- Skills Section Starts Here  -->
     <h1>Skills</h1>
     <div id="third-container">
       
@@ -79,39 +89,40 @@
         <div class="development">
           <h2 class="skill-title">Frontend</h2>
           <div class="skill">
-            <div id="html">HTML</div>
-            <div id="CSS">CSS</div>
-            <div id="JS">JavaScript</div>
-            <div id="react">React JS</div>
+            <div id="html"><i class='bx bxl-html5' ></i> HTML</div>
+            <div id="CSS"><i class='bx bxl-css3 ' ></i> CSS</div>
+            <div id="JS"> <i class='bx bxl-javascript' ></i> JavaScript</div>
+            <div id="react"> <i class='bx bxl-react' ></i> React JS</div>
+            <div id="jquery"> <i class='bx bxl-jquery' ></i> JQuery</div>
           </div>
         </div>
         <!-- ------------------------------- -->
         <div class="development">
           <h2 class="skill-title">Backend</h2>
           <div class="skill">
-            <div id="node">Node JS</div>
-            <div id="express">Express JS</div>
-            <div id="ejs">Ejs</div>
+            <div id="node"><i class='bx bxl-nodejs '  ></i> Node JS</div>
+            <div id="express"><i class='bx bxl-codepen  '></i> Express JS</div>
+            <div id="ejs"><i class='bx bxl-codepen  ' ></i> Ejs</div>
           </div>
         </div>
         <!-- ------------------------------------------------------------------- -->
         <div class="development">
           <h2 class="skill-title">Programming</h2>
           <div class="skill">
-            <div id="c">C</div>
-            <div id="c1">C++</div>
-            <div id="java">Java</div>
-            <div id="python">Python</div>
+            <div id="c"> <i class='bx bxl-c-plus-plus' ></i> C</div>
+            <div id="c1"> <i class='bx bxl-c-plus-plus ' ></i> C++</div>
+            <div id="java"><i class='bx bxl-java ' ></i> Java</div>
+            <div id="python"> <i class='bx bxl-python ' ></i> Python</div>
           </div>
         </div>
         <!-- ---------------------------00--------------------  -->
         <div class="development">
           <h2 class="skill-title">Database</h2>
           <div class="skill">
-            <div id="mysql">MySql</div>
-            <div id="postgres">Postgres</div>
-            <div id="MariaDb">MariaDB</div>
-            <div id="Orcale">Oracle</div>
+            <div id="mysql"><i class='bx bxs-popsicle'></i> MySql</div>
+            <div id="postgres"><i class='bx bxs-popsicle'></i>  Postgres</div>
+            <div id="MariaDb"><i class='bx bxs-popsicle'></i> MariaDB</div>
+            <div id="Orcale"><i class='bx bxs-popsicle'></i> Oracle</div>
           </div>
         </div>
     
@@ -143,13 +154,34 @@
         target="_blank"
         >LinkedIn</a
       >
-      <a href="https://www.instagram.com/___saransh.__/" target="_blank"
-        >Instagram</a
+      <a href="https://github.com/SaranshPrasad/" target="_blank"
+        >Github</a
       >
       <a href="mailto:saranshprasad08@gmail.com" target="_blank">Contact </a>
    
 
-      <p class="footer-text">Copywrite © Saransh .</p>
+      <p class="footer-text">Copyright © Saransh .</p>
     </footer>
+
+
+
+    <script>
+
+      const nav = document.querySelector("nav"),
+            toggleBtn = nav.querySelector(".toggle-btn");
+        toggleBtn.addEventListener("click" , () =>{
+          nav.classList.toggle("open");
+        setTimeout(()=>{
+          nav.classList.remove("open");
+        }, timer);
+        
+        });
+        
+      
+    
+      </script>
+
+
+
   </body>
 </html>
