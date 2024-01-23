@@ -111,8 +111,8 @@ hr {
 }
 
 #third-container {
-  min-height: 50vh;
-  width: 90%;
+  min-height: 70vh;
+  width: 80%;
   position: relative;
   display: flex;
   align-items: center;
@@ -199,6 +199,9 @@ hr {
 }
 
 @media (max-width: 600px) {
+ #main{
+   width:100%;
+ }
   body {
     text-align: center;
     width: 100%;
@@ -268,7 +271,7 @@ hr {
     justify-content: space-between;
   }
   #third-container .elem {
-    width: 100%;
+    width: 90%;
     margin-bottom: 3vw;
     overflow: hidden;
   }
