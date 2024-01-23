@@ -111,8 +111,8 @@ hr {
 }
 
 #third-container {
-  min-height: 90vh;
-  width: 100%;
+  min-height: 70vh;
+  width: 90%;
   position: relative;
   display: flex;
   align-items: center;
@@ -134,7 +134,7 @@ hr {
 
 .elem img {
   height: 100%;
-  width: 90%;
+  width: 100%;
   object-fit: cover;
   scale: 1.1;
 }
@@ -199,9 +199,6 @@ hr {
 }
 
 @media (max-width: 600px) {
- #main{
-   max-width:100%;
- }
   body {
     text-align: center;
     width: 100%;
@@ -264,16 +261,17 @@ hr {
     padding: 0;
   }
   #third-container {
-    height: 100vh;
-    min-width: 100%;
-    padding: 5vw 3vw;
+    width: 90%;
     flex-direction: column;
     justify-content: space-between;
   }
   #third-container .elem {
-    min-width: 100%;
+    width: 100%;
     margin-bottom: 3vw;
     overflow: hidden;
+  }
+  #main{
+    max-width: 100%;
   }
 }
 
