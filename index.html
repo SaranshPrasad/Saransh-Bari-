@@ -6,12 +6,15 @@
     <title>Saransh Bari</title>
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link rel="shortcut icon" href="./picofme.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./picofme.png" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;family=Sacramento&amp;display=swap"
       rel="stylesheet"
     />
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style1.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
@@ -25,67 +28,101 @@
       href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
   </head>
   <body>
-
-
     <!-- Mountain Page Or hero page starts here -->
-    <div class="first-container gradient-background" id="home">
-      <img src="./cloud.png" alt="cloud-1" class="cloud-1" />
-      <div class="title">
-        <h1 class="data">I am Saransh</h1>
-        <h2>a <span class="pro">pro</span>grammer.</h2>
-      </div>
-      <img src="./cloud.png" alt="cloud-2" class="cloud-2" />
-      <img src="./mountain.png" alt="mountain" class="mountain" />
-    </div>
-
-       <!-- Sticky Nav Bar starts here  -->
-       <nav>
-        <div class="nav-content">
-          <div class="toggle-btn">
-            <i class='bx bxs-rocket'></i>
-            
-          </div>
-          <span style="--i:1;">
-            <a href="#"><i class='bx bxs-home'></i></a>
-          </span>
-          <span style="--i:2;">
-            <a href="https://saranshprasad.github.io/RockPaperScissors/" target="_blank"><i class='bx bxs-game' ></i></a>
-          </span> 
-          <span style="--i:3;">
-            <a href="https://saranshprasad.github.io/TikTacToe/" target="_blank"><i class='bx bxs-invader' ></i></a>
-          </span> 
-          <span style="--i:4;">
-            <a href="https://saranshprasad.github.io/Game-1/" target="_blank"><i class='bx bxs-dice-6' ></i></a>
-          </span>
-          <span style="--i:5;">
-            <a href="https://github.com/SaranshPrasad/"  target="_blank"><i class='bx bxl-github' ></i></a>
-          </span>
-        </div>
-      </nav>
-
-
-    <!-- Second Container or About Me section Starts  -->
-    <div class="second-container">
-      <img src="./picofme.png" alt="" class="profile-pic" />
-      <h1 class="profile-heading">Hello</h1>
-      <div class="profile-text">
-        <p class="p-text">
-          I am Saransh , just a curious boy having potential to fulfil its
-          dream. I'm a web developer and observer . If you have me an 🍨 i will
-          share my coding stuffs with you .
-        </p>
-      </div>
-    </div>
-    <hr />
-
-  
-  <!-- Skills Section Starts Here  -->
-    <h1>Skills</h1>
-    <div id="third-container">
+    <div id="main">
       
-      <div id="main-skill">
+      <div class="first-container gradient-background" id="home">
+        <img src="./cloud.png" alt="cloud-1" class="cloud-1" />
+        <div class="title">
+          <h1 class="data">I am Saransh</h1>
+          <h2>a <span class="pro">pro</span>grammer.</h2>
+        </div>
+        <img src="./cloud.png" alt="cloud-2" class="cloud-2" />
+        <img src="./mountain.png" alt="mountain" class="mountain" id="mount" />
+      </div>
+
+      <!-- Sticky Nav Bar starts here  -->
+   
+
+      <!-- Second Container or About Me section Starts  -->
+      <div
+        data-scroll
+        data-scroll-speed="2"
+        class="second-container"
+        id="second"
+      >
+        <img src="./picofme.png" alt="" class="profile-pic" />
+        <h1 class="profile-heading">Hello</h1>
+        <div class="profile-text">
+          <p class="p-text">
+            I am Saransh , just a curious boy having potential to fulfil its
+            dream. I'm a web developer and observer . If you have me an 🍨 i
+            will share my coding stuffs with you .
+          </p>
+        </div>
+      </div>
+      <hr />
+
+      <!-- Skills Section Starts Here  -->
+      <h1 id="skills">Skills</h1>
+      <div id="third-container" data-scroll data-scroll-speed="1">
+        
+        <div class="elem" id="elem1">
+          <img data-scroll data-scroll-speed="-1" src="./front.jpg" alt="" /><div  class="dets">
+            <h3>Front End </h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Jquery</li>
+              <li>Django</li>
+              <li>Fkask</li>
+            </ul>
+          </div>
+        </div>
+        <div class="elem" id="elem2">
+          <img data-scroll data-scroll-speed="-1" src="./back.jpg" alt="" /><div  class="dets">
+            <h3>Back End </h3>
+            <ul>
+              <li>Node Js</li>
+              <li>Express Js</li>
+              <li>JavaScript</li>
+              <li>Ejs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="elem" id="elem3">
+          <img data-scroll data-scroll-speed="-1" src="./back.jpg" alt="" /><div class="dets">
+            <h3>Programing</h3>
+            <ul>
+              <li>C / C++</li>
+              <li>Python</li>
+              <li>Java</li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="elem" id="elem4">
+          <img data-scroll data-scroll-speed="-1" src="./front.jpg" alt="" /><div  class="dets">
+            <h3>Database</h3>
+            <ul>
+              <li>Postgres</li>
+              <li>MySql</li>
+              <li>Oracle</li>
+              <li>Sqlite</li>
+             
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div id="main-skill" >
+
         <div class="development">
           <h2 class="skill-title">Frontend</h2>
           <div class="skill">
@@ -96,7 +133,7 @@
             <div id="jquery"> <i class='bx bxl-jquery' ></i> JQuery</div>
           </div>
         </div>
-        <!-- ------------------------------- -->
+         ------------------------------- 
         <div class="development">
           <h2 class="skill-title">Backend</h2>
           <div class="skill">
@@ -105,7 +142,7 @@
             <div id="ejs"><i class='bx bxl-codepen  ' ></i> Ejs</div>
           </div>
         </div>
-        <!-- ------------------------------------------------------------------- -->
+        ------------------------------------------------------------------- 
         <div class="development">
           <h2 class="skill-title">Programming</h2>
           <div class="skill">
@@ -115,7 +152,7 @@
             <div id="python"> <i class='bx bxl-python ' ></i> Python</div>
           </div>
         </div>
-        <!-- ---------------------------00--------------------  -->
+        ---------------------------00--------------------  
         <div class="development">
           <h2 class="skill-title">Database</h2>
           <div class="skill">
@@ -126,62 +163,84 @@
           </div>
         </div>
     
+      </div> -->
       </div>
-    </div>
-    <!-- ............................................................. -->
 
-    <hr />
+      <!-- ............................................................. -->
 
-    <div class="last-container" id="contact">
-      <h1>Get In Touch</h1>
-      <p class="final-text">
-        We can talk for while if you bring some icecreams for me .
-      </p>
-      <p class="last-text">
-        Love icecreams as much as I do? Let's talk about how awesome they are!
-        We can code while we eat icecreams .
-      </p>
-      <div>
-        <a href="mailto:saranshprasad08@gmail.com" target="_blank" class="btn"
-          >CONTACT ME
-        </a>
-      </div>
-    </div>
-
-    <footer class="footer-items">
-      <a
-        href="https://www.linkedin.com/in/saransh-prasad-1a8b45283/"
-        target="_blank"
-        >LinkedIn</a
-      >
-      <a href="https://github.com/SaranshPrasad/" target="_blank"
-        >Github</a
-      >
-      <a href="mailto:saranshprasad08@gmail.com" target="_blank">Contact </a>
-   
-
-      <p class="footer-text">Copyright © Saransh .</p>
-    </footer>
-
-
-
-    <script>
-
-      const nav = document.querySelector("nav"),
-            toggleBtn = nav.querySelector(".toggle-btn");
-        toggleBtn.addEventListener("click" , () =>{
-          nav.classList.toggle("open");
-        setTimeout(()=>{
-          nav.classList.remove("open");
-        }, timer);
-        
-        });
-        
+      <hr />
       
-    
-      </script>
 
+      <div
+        class="last-container"
+        id="contact"
+        data-scroll
+        data-scroll-speed="6"
+      >
+        <h1>Get In Touch</h1>
+        <p class="final-text">
+          We can talk for while if you bring some icecreams for me .
+        </p>
+        <p class="last-text">
+          Love icecreams as much as I do? Let's talk about how awesome they are!
+          We can code while we eat icecreams .
+        </p>
+        <div>
+          <a href="mailto:saranshprasad08@gmail.com" target="_blank" class="btn"
+            >CONTACT ME
+          </a>
+        </div>
+      </div>
 
+      <footer class="footer-items">
+        <a
+          href="https://www.linkedin.com/in/saransh-prasad-1a8b45283/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/SaranshPrasad/" target="_blank">Github</a>
+        <a href="mailto:saranshprasad08@gmail.com" target="_blank">Contact </a>
 
+        <p class="footer-text">Copyright © Saransh .</p>
+      </footer>
+    </div>
+
+<!-- 
+    <nav>
+      <div class="nav-content">
+        <div class="toggle-btn">
+          <i class="bx bxs-rocket"></i>
+        </div>
+        <span style="--i: 1">
+          <a href="#"><i class="bx bxs-home"></i></a>
+        </span>
+        <span style="--i: 2">
+          <a
+            href="https://saranshprasad.github.io/RockPaperScissors/"
+            target="_blank"
+            ><i class="bx bxs-game"></i
+          ></a>
+        </span>
+        <span style="--i: 3">
+          <a href="https://saranshprasad.github.io/TikTacToe/" target="_blank"
+            ><i class="bx bxs-invader"></i
+          ></a>
+        </span>
+        <span style="--i: 4">
+          <a href="https://saranshprasad.github.io/Game-1/" target="_blank"
+            ><i class="bx bxs-dice-6"></i
+          ></a>
+        </span>
+        <span style="--i: 5">
+          <a href="https://github.com/SaranshPrasad/" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </span>
+      </div>
+    </nav>  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="script.js"></script>
   </body>
 </html>
