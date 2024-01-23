@@ -265,7 +265,7 @@ hr {
   }
   #third-container {
     height: 100vh;
-    width: 100%;
+    width: 70%;
     padding: 5vw 3vw;
     flex-direction: column;
     justify-content: space-between;
