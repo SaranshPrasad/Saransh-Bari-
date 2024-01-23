@@ -265,13 +265,13 @@ hr {
   }
   #third-container {
     height: 100vh;
-    max-width: 100%;
+    width: 100%;
     padding: 5vw 3vw;
     flex-direction: column;
     justify-content: space-between;
   }
   #third-container .elem {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 3vw;
     overflow: hidden;
   }
