@@ -117,6 +117,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding:3vw 5vw;
   gap: 50px;
 }
 
